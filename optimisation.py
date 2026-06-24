@@ -16,7 +16,7 @@ def run_optimization():
     # ==========================================
 
     # Initialize Cerebro for optimization
-    cerebro = bt.Cerebro(optds=True) # Enables optimization data streaming
+    cerebro = bt.Cerebro() # Enables optimization data streaming
 
     # 1. Load data via the loader function we built in main.py
     market_data = load_data(TICKER_SYMBOL, START_DATE, END_DATE)
@@ -44,7 +44,7 @@ def run_optimization():
 
     print("Executing parallel multi-core grid optimization search...")
     # Run the optimization matrix (maxcpu=1 ensures stability across all operating systems)
-    optimization_results = cerebro.run(maxcpu=1)
+    optimization_results = cerebro.run(maxcpu=1,optreturn=False)
 
     # 5. Extract and sort results to find the winner
     compiled_results = []
