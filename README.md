@@ -20,7 +20,7 @@ A production-grade quantitative research framework built on top of the **Backtra
 * **Execution:** Opens mean-reversion positions at statistical extremes (oversold/overbought) and liquidates positions once price returns to the moving average baseline.
 
 ### 3. Statistical Arbitrage: Cointegrated Pairs Trading
-* **Logic:** A market-neutral strategy utilizing Ordinary Least Squares (OLS) regression to dynamically map the hedge ratio ($\beta$) and intercept constant between two fundamentally cointegrated corporate assets (e.g., $PEP$ vs. $KO$).
+* **Logic:** A market-neutral strategy utilizing Ordinary Least Squares (OLS) regression to dynamically map the hedge ratio ($\beta$) and intercept constant between two fundamentally cointegrated corporate assets (e.g. Pepsi vs Coca Cola)
 * **Mathematical Framework:** Computes a rolling Z-Score tracking spread deviations from historical equilibrium, opening paired long/short tracking legs when $|Z| > 2.0$.
 
 
