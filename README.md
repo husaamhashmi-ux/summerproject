@@ -23,11 +23,6 @@ A production-grade quantitative research framework built on top of the **Backtra
 * **Logic:** A market-neutral strategy utilizing Ordinary Least Squares (OLS) regression to dynamically map the hedge ratio ($\beta$) and intercept constant between two fundamentally cointegrated corporate assets (e.g., $PEP$ vs. $KO$).
 * **Mathematical Framework:** Computes a rolling Z-Score tracking spread deviations from historical equilibrium, opening paired long/short tracking legs when $|Z| > 2.0$.
 
-$$\text{Spread} = \text{Price}_{\text{Asset 1}} - (\beta \times \text{Price}_{\text{Asset 2}}) + \text{Constant}$$
-
-$$Z\text{-Score} = \frac{\text{Spread} - \mu_{\text{Spread}}}{\sigma_{\text{Spread}}}$$
-
----
 
 ## Installation & Getting Started
 
