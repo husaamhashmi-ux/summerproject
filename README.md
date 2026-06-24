@@ -1,5 +1,4 @@
 # Modular Algorithmic Backtesting & Optimization Engine
-# Multi-Strategy Algorithmic Backtesting & Parallel Optimization Engine
 
 A production-grade quantitative research framework built on top of the **Backtrader** ecosystem. This engine enables the rapid prototyping, evaluation, and parallel parameter optimization of systematic trading strategies across multiple asset pipelines.
 
